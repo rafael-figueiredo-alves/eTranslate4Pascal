@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CONFIG>
+  <Compiler Value="C:\lazarus\fpc\3.2.2\bin\x86_64-win64\fpc.exe" Date="1449427374"/>
+  <Params Value=" -MObjFPC -Scghi -O1 -gw2 -godwarfsets -gl -WG -l -vewnhibq -FiC:\MeusProjetos\eTranslate4Pascal\Demo\Lazarus\lib\x86_64-win64 -FuC:\MeusProjetos\eTranslate4Pascal\source -FuC:\lazarus\lcl\units\x86_64-win64\win32 -FuC:\lazarus\lcl\units\x86_64-win64 -FuC:\lazarus\components\freetype\lib\x86_64-win64 -FuC:\lazarus\components\lazutils\lib\x86_64-win64 -FuC:\lazarus\packager\units\x86_64-win64 -FuC:\MeusProjetos\eTranslate4Pascal\Demo\Lazarus\ -FUC:\MeusProjetos\eTranslate4Pascal\Demo\Lazarus\lib\x86_64-win64\ -FEC:\MeusProjetos\eTranslate4Pascal\Demo\Lazarus\ -oC:\MeusProjetos\eTranslate4Pascal\Demo\Lazarus\eTranslate_Demo_Lazarus.exe -dLCL -dLCLwin32 eTranslate_Demo_Lazarus.lpr"/>
+</CONFIG>

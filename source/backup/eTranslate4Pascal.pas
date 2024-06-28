@@ -8,6 +8,7 @@ type
    function Version: string;
    function GetTexto: string;
    function SetTexto(Value: string): ieTranslate;
+   function EscreveTextoNoEdit(Value: TObject): ieTranslate;
  end;
 
  TeTranslate = class(TInterfacedObject, ieTranslate)
@@ -18,6 +19,7 @@ type
     function Version: string;
     function GetTexto: string;
     function SetTexto(Value: string): ieTranslate;
+    function EscreveTextoNoEdit(Value: TObject): ieTranslate;
     constructor Create;
     destructor Destroy; override;
     class function New: ieTranslate;
@@ -31,7 +33,7 @@ var
 implementation
 
 uses
-  SysUtils;
+  SysUtils, Rtti;
 
 { TeTranslate }
 
@@ -51,6 +53,28 @@ destructor TeTranslate.Destroy;
 begin
 
   inherited;
+end;
+
+function TeTranslate.EscreveTextoNoEdit(Value: TObject): ieTranslate;
+var
+  ctx: TRttiContext;
+  prop: TRttiProperty;
+  teste: string;
+begin
+  for prop in ctx.GetType(Value.ClassType).GetProperties do
+      if prop.Name = 'TagString' then
+       teste := prop.GetValue(Value).AsString;
+
+      for prop in ctx.GetType(Value.ClassType).GetProperties do
+       begin
+      if prop.Name = 'Text' then
+       begin
+        if(teste = '1') then
+         prop.SetValue(Value, Texto);
+        if(teste = '2') then
+         prop.SetValue(Value, 'O que foi?');
+       end;
+       end;
 end;
 
 function TeTranslate.GetTexto: string;
