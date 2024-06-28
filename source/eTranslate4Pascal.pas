@@ -5,6 +5,7 @@ interface
 type
  ieTranslate = interface
    ['{0A0D7CEA-6E04-4E91-96DC-CE7A9552C3E2}']
+   function Version: string;
    function GetTexto: string;
    function SetTexto(Value: string): ieTranslate;
    function EscreveTextoNoEdit(Value: TObject): ieTranslate;
@@ -13,7 +14,9 @@ type
  TeTranslate = class(TInterfacedObject, ieTranslate)
    private
     Texto: string;
+    const _version = '1.0';
    public
+    function Version: string;
     function GetTexto: string;
     function SetTexto(Value: string): ieTranslate;
     function EscreveTextoNoEdit(Value: TObject): ieTranslate;
@@ -59,13 +62,18 @@ var
   teste: string;
 begin
   for prop in ctx.GetType(Value.ClassType).GetProperties do
+      if prop.Name = 'TagString' then
+       teste := prop.GetValue(Value).AsString;
+
+      for prop in ctx.GetType(Value.ClassType).GetProperties do
+       begin
       if prop.Name = 'Text' then
        begin
-        teste := prop.GetValue(Value).AsString;
         if(teste = '1') then
          prop.SetValue(Value, Texto);
         if(teste = '2') then
          prop.SetValue(Value, 'O que foi?');
+       end;
        end;
 end;
 
@@ -83,6 +91,11 @@ function TeTranslate.SetTexto(Value: string): ieTranslate;
 begin
   Texto := Value;
   Result := self;
+end;
+
+function TeTranslate.Version: string;
+begin
+  Result :=  _version;
 end;
 
 end.

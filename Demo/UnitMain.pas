@@ -16,6 +16,7 @@ type
     procedure Button1Click(Sender: TObject);
     procedure Button2Click(Sender: TObject);
     procedure Button3Click(Sender: TObject);
+    procedure FormCreate(Sender: TObject);
   private
     { Private declarations }
   public
@@ -34,6 +35,7 @@ uses eTranslate4Pascal, UnitSecond;
 procedure TForm1.Button1Click(Sender: TObject);
 begin
   //Edit1.Text := eTranslate.GetTexto;
+  Edit1.TagString := '2';
   eTranslate.EscreveTextoNoEdit(Edit1);
 end;
 
@@ -51,6 +53,11 @@ begin
   finally
     FreeAndNil(Form2);
   end;
+end;
+
+procedure TForm1.FormCreate(Sender: TObject);
+begin
+  form1.Caption := 'eTranslate version ' + eTranslate.Version;
 end;
 
 end.
