@@ -34,9 +34,7 @@ uses eTranslate4Pascal, UnitSecond;
 
 procedure TForm1.Button1Click(Sender: TObject);
 begin
-  //Edit1.Text := eTranslate.GetTexto;
-  Edit1.TagString := '2';
-  eTranslate.EscreveTextoNoEdit(Edit1);
+  Edit1.Text := eTranslate.GetTexto;
 end;
 
 procedure TForm1.Button2Click(Sender: TObject);
