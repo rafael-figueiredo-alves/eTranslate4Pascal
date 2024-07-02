@@ -31,12 +31,12 @@ Uses eTranslate4Pascal;
 
 procedure TForm2.Button1Click(Sender: TObject);
 begin
-  Edit1.Text := eTranslate.GetTexto;
+  Edit1.Text := eTranslate.GetLanguage;
 end;
 
 procedure TForm2.Button2Click(Sender: TObject);
 begin
-  eTranslate.SetTexto(edit1.Text);
+  eTranslate.SetLanguage(edit1.Text);
 end;
 
 end.

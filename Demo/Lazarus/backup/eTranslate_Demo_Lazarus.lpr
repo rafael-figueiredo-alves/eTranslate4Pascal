@@ -19,7 +19,6 @@ begin
   RequireDerivedFormResource:=True;
   Application.Scaled:=True;
   Application.Initialize;
-  eTranslate('Teste');
   Application.CreateForm(TForm1, Form1);
   Application.Run;
 end.

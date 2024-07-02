@@ -12,6 +12,7 @@ uses
 begin
   ReportMemoryLeaksOnShutdown := true;
   Application.Initialize;
+  eTranslate('Teste');
   Application.CreateForm(TForm1, Form1);
   Application.CreateForm(TForm2, Form2);
   Application.Run;

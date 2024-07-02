@@ -14,8 +14,11 @@ type
   TForm1 = class(TForm)
     Button1: TButton;
     Button2: TButton;
+    Button3: TButton;
     Edit1: TEdit;
     procedure Button1Click(Sender: TObject);
+    procedure Button2Click(Sender: TObject);
+    procedure Button3Click(Sender: TObject);
     procedure FormCreate(Sender: TObject);
   private
 
@@ -42,6 +45,21 @@ end;
 procedure TForm1.Button1Click(Sender: TObject);
 begin
   edit1.Text:= eTranslate.GetTexto;
+end;
+
+procedure TForm1.Button2Click(Sender: TObject);
+begin
+  eTranslate.SetTexto(edit1.Text);
+end;
+
+procedure TForm1.Button3Click(Sender: TObject);
+var
+  texto : string;
+begin
+  texto := eTranslate.Translate('Teste');
+  ShowMessage(texto);
+  texto := eTranslate.Translate('Teste 2', ['Lazarus', 'Excelente']);
+  ShowMessage(texto);
 end;
 
 end.

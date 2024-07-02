@@ -13,10 +13,12 @@ type
     Button1: TButton;
     Button2: TButton;
     Button3: TButton;
+    Button4: TButton;
     procedure Button1Click(Sender: TObject);
     procedure Button2Click(Sender: TObject);
     procedure Button3Click(Sender: TObject);
     procedure FormCreate(Sender: TObject);
+    procedure Button4Click(Sender: TObject);
   private
     { Private declarations }
   public
@@ -34,12 +36,12 @@ uses eTranslate4Pascal, UnitSecond;
 
 procedure TForm1.Button1Click(Sender: TObject);
 begin
-  Edit1.Text := eTranslate.GetTexto;
+  Edit1.Text := eTranslate.GetLanguage;
 end;
 
 procedure TForm1.Button2Click(Sender: TObject);
 begin
-  eTranslate.SetTexto(Edit1.Text);
+  eTranslate.SetLanguage(Edit1.Text);
 end;
 
 
@@ -51,6 +53,17 @@ begin
   finally
     FreeAndNil(Form2);
   end;
+end;
+
+procedure TForm1.Button4Click(Sender: TObject);
+var
+  texto : string;
+begin
+  texto := EmptyStr;
+  texto := eTranslate.Translate('Teste');
+  showmessage(texto);
+  texto := eTranslate.Translate('Teste 2', ['Rafael', '11/01/2024']);
+  ShowMessage(texto);
 end;
 
 procedure TForm1.FormCreate(Sender: TObject);
