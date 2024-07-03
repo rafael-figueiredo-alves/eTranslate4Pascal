@@ -10,7 +10,7 @@ uses
   athreads,
   {$ENDIF}
   Interfaces, // this includes the LCL widgetset
-  Forms, unitMain, eTranslate4Pascal
+  Forms, unitMain, SysUtils, eTranslate4Pascal
   { you can add units after this };
 
 {$R *.res}
@@ -19,7 +19,7 @@ begin
   RequireDerivedFormResource:=True;
   Application.Scaled:=True;
   Application.Initialize;
-  eTranslate('Teste');
+  eTranslate(ExtractFilePath(ParamStr(0)) + 'translate.json');
   Application.CreateForm(TForm1, Form1);
   Application.Run;
 end.

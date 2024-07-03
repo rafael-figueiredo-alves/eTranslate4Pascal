@@ -10,9 +10,9 @@
         <IsPartOfProject Value="True"/>
         <IsVisibleTab Value="True"/>
         <EditorIndex Value="-1"/>
-        <TopLine Value="3"/>
-        <CursorPos X="20" Y="22"/>
-        <UsageCount Value="21"/>
+        <TopLine Value="4"/>
+        <CursorPos X="6" Y="18"/>
+        <UsageCount Value="22"/>
       </Unit>
       <Unit>
         <Filename Value="unitmain.pas"/>
@@ -24,15 +24,15 @@
         <EditorIndex Value="-1"/>
         <TopLine Value="42"/>
         <CursorPos X="25" Y="52"/>
-        <UsageCount Value="21"/>
+        <UsageCount Value="22"/>
       </Unit>
       <Unit>
         <Filename Value="..\..\source\eTranslate4Pascal.pas"/>
         <IsPartOfProject Value="True"/>
         <EditorIndex Value="-1"/>
-        <TopLine Value="76"/>
-        <CursorPos X="22" Y="89"/>
-        <UsageCount Value="21"/>
+        <TopLine Value="139"/>
+        <CursorPos X="13" Y="158"/>
+        <UsageCount Value="22"/>
       </Unit>
     </Units>
     <General>

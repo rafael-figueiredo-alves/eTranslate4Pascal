@@ -1,0 +1,14 @@
+{
+    "en-US" : {
+        "Main" : {
+            "Btn1" : "Yes",
+            "Btn2" : "No"
+        }
+    },
+    "pt-BR" : {
+        "Main" : {
+            "Btn1" : "Sim",
+            "Btn2" : "Não"
+        }
+    }
+}

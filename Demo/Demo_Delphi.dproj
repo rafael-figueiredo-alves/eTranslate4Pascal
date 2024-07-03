@@ -189,11 +189,9 @@
         </DelphiCompile>
         <DCCReference Include="UnitMain.pas">
             <Form>Form1</Form>
-            <FormType>fmx</FormType>
         </DCCReference>
         <DCCReference Include="UnitSecond.pas">
             <Form>Form2</Form>
-            <FormType>fmx</FormType>
         </DCCReference>
         <DCCReference Include="..\source\eTranslate4Pascal.pas"/>
         <BuildConfiguration Include="Base">
