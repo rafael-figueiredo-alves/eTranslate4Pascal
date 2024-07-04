@@ -6,7 +6,11 @@ uses
   System.SysUtils,
   UnitMain in 'UnitMain.pas' {Form1},
   UnitSecond in 'UnitSecond.pas' {Form2},
-  eTranslate4Pascal in '..\source\eTranslate4Pascal.pas';
+  eTranslate4Pascal in '..\source\eTranslate4Pascal.pas',
+  eTranslate4Pascal.Classes in '..\source\eTranslate4Pascal.Classes.pas',
+  eTranslate4Pascal.Interfaces in '..\source\eTranslate4Pascal.Interfaces.pas',
+  eTranslate4Pascal.Shared in '..\source\eTranslate4Pascal.Shared.pas',
+  eTranslate4Pascal.JsonObjectHelper in '..\source\eTranslate4Pascal.JsonObjectHelper.pas';
 
 {$R *.res}
 

@@ -56,9 +56,10 @@ procedure TForm1.Button3Click(Sender: TObject);
 var
   texto : string;
 begin
-  texto := eTranslate.Translate('Teste');
+  eTranslate.SetLanguage('pt-BR');
+  texto := eTranslate.Translate('Main.Btn2.Text');
   ShowMessage(texto);
-  texto := eTranslate.Translate('Teste 2', ['Lazarus', 'Excelente']);
+  texto := eTranslate.Translate('Main.Btn1', ['Lazarus', 'Excelente']);
   ShowMessage(texto);
 end;
 

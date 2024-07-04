@@ -8,12 +8,11 @@
       <Unit>
         <Filename Value="eTranslate_Demo_Lazarus.lpr"/>
         <IsPartOfProject Value="True"/>
-        <IsVisibleTab Value="True"/>
-        <EditorIndex Value="1"/>
+        <EditorIndex Value="-1"/>
+        <WindowIndex Value="-1"/>
         <TopLine Value="4"/>
         <CursorPos X="6" Y="18"/>
-        <UsageCount Value="22"/>
-        <Loaded Value="True"/>
+        <UsageCount Value="23"/>
       </Unit>
       <Unit>
         <Filename Value="unitmain.pas"/>
@@ -22,60 +21,74 @@
         <HasResources Value="True"/>
         <ResourceBaseClass Value="Form"/>
         <UnitName Value="unitMain"/>
-        <EditorIndex Value="-1"/>
-        <TopLine Value="42"/>
-        <CursorPos X="25" Y="52"/>
-        <UsageCount Value="22"/>
+        <TopLine Value="41"/>
+        <CursorPos X="32" Y="59"/>
+        <UsageCount Value="23"/>
+        <Loaded Value="True"/>
+        <LoadedDesigner Value="True"/>
       </Unit>
       <Unit>
         <Filename Value="..\..\source\eTranslate4Pascal.pas"/>
         <IsPartOfProject Value="True"/>
+        <EditorIndex Value="-1"/>
         <TopLine Value="139"/>
         <CursorPos X="13" Y="158"/>
-        <UsageCount Value="22"/>
+        <UsageCount Value="23"/>
+      </Unit>
+      <Unit>
+        <Filename Value="..\..\source\eTranslate4Pascal.Shared.pas"/>
+        <IsVisibleTab Value="True"/>
+        <EditorIndex Value="1"/>
+        <TopLine Value="30"/>
+        <CursorPos X="14" Y="41"/>
+        <UsageCount Value="10"/>
+        <Loaded Value="True"/>
+      </Unit>
+      <Unit>
+        <Filename Value="..\..\source\eTranslate4Pascal.Classes.pas"/>
+        <EditorIndex Value="2"/>
+        <TopLine Value="91"/>
+        <CursorPos X="35" Y="97"/>
+        <UsageCount Value="10"/>
+        <Loaded Value="True"/>
+      </Unit>
+      <Unit>
+        <Filename Value="..\..\source\eTranslate4Pascal.JsonObjectHelper.pas"/>
+        <EditorIndex Value="3"/>
+        <TopLine Value="7"/>
+        <CursorPos X="30" Y="32"/>
+        <UsageCount Value="10"/>
         <Loaded Value="True"/>
       </Unit>
     </Units>
-    <JumpHistory HistoryIndex="9">
+    <JumpHistory HistoryIndex="6">
       <Position>
-        <Filename Value="..\..\source\eTranslate4Pascal.pas"/>
-        <Caret Line="132" Column="49" TopLine="115"/>
+        <Filename Value="unitmain.pas"/>
+        <Caret Line="61" Column="48" TopLine="41"/>
       </Position>
       <Position>
-        <Filename Value="..\..\source\eTranslate4Pascal.pas"/>
-        <Caret Line="56" Column="3" TopLine="45"/>
+        <Filename Value="..\..\source\eTranslate4Pascal.Shared.pas"/>
+        <Caret Line="91" Column="62" TopLine="75"/>
       </Position>
       <Position>
-        <Filename Value="..\..\source\eTranslate4Pascal.pas"/>
-        <Caret Line="55" Column="3" TopLine="42"/>
+        <Filename Value="..\..\source\eTranslate4Pascal.Classes.pas"/>
+        <Caret Line="96" Column="34" TopLine="85"/>
       </Position>
       <Position>
-        <Filename Value="..\..\source\eTranslate4Pascal.pas"/>
-        <Caret Line="60" Column="11" TopLine="43"/>
+        <Filename Value="..\..\source\eTranslate4Pascal.JsonObjectHelper.pas"/>
+        <Caret Line="32" Column="36" TopLine="21"/>
       </Position>
       <Position>
-        <Filename Value="..\..\source\eTranslate4Pascal.pas"/>
-        <Caret Line="120" Column="21" TopLine="109"/>
+        <Filename Value="..\..\source\eTranslate4Pascal.Classes.pas"/>
+        <Caret Line="97" Column="35" TopLine="91"/>
       </Position>
       <Position>
-        <Filename Value="..\..\source\eTranslate4Pascal.pas"/>
-        <Caret Line="140" Column="59" TopLine="127"/>
+        <Filename Value="..\..\source\eTranslate4Pascal.Shared.pas"/>
+        <Caret Line="91" Column="107" TopLine="75"/>
       </Position>
       <Position>
-        <Filename Value="..\..\source\eTranslate4Pascal.pas"/>
-        <Caret Line="167" Column="31" TopLine="156"/>
-      </Position>
-      <Position>
-        <Filename Value="eTranslate_Demo_Lazarus.lpr"/>
-        <Caret Line="22" Column="61" TopLine="4"/>
-      </Position>
-      <Position>
-        <Filename Value="..\..\source\eTranslate4Pascal.pas"/>
-        <Caret Line="168" Column="143" TopLine="157"/>
-      </Position>
-      <Position>
-        <Filename Value="eTranslate_Demo_Lazarus.lpr"/>
-        <Caret Line="13" Column="29" TopLine="4"/>
+        <Filename Value="..\..\source\eTranslate4Pascal.Shared.pas"/>
+        <Caret Line="41" Column="45" TopLine="29"/>
       </Position>
     </JumpHistory>
     <RunParams>

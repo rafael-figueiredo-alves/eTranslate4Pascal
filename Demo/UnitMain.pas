@@ -36,7 +36,7 @@ uses eTranslate4Pascal, UnitSecond;
 
 procedure TForm1.Button1Click(Sender: TObject);
 begin
-  Edit1.Text := eTranslate.GetLanguage;
+  Edit1.Text := eTranslate.Translate('Main.Btn1');
 end;
 
 procedure TForm1.Button2Click(Sender: TObject);
@@ -60,9 +60,9 @@ var
   texto : string;
 begin
   texto := EmptyStr;
-  texto := eTranslate.Translate('Teste');
+  texto := eTranslate.Translate('Main.Btn2.Text');
   showmessage(texto);
-  texto := eTranslate.Translate('Teste 2', ['Rafael', '11/01/2024']);
+  texto := eTranslate.Translate('Main.Btn1', ['Rafael', '01/01/2024']);
   ShowMessage(texto);
 end;
 

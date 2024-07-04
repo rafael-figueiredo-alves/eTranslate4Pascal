@@ -44,21 +44,21 @@ end;
 
 procedure TForm1.Button1Click(Sender: TObject);
 begin
-  edit1.Text:= eTranslate.GetTexto;
+  edit1.Text:= eTranslate.GetLanguage;
 end;
 
 procedure TForm1.Button2Click(Sender: TObject);
 begin
-  eTranslate.SetTexto(edit1.Text);
+  eTranslate.SetLanguage(edit1.Text);
 end;
 
 procedure TForm1.Button3Click(Sender: TObject);
 var
   texto : string;
 begin
-  texto := eTranslate.Translate('Teste');
+  texto := eTranslate.Translate('Main.Btn2.Text');
   ShowMessage(texto);
-  texto := eTranslate.Translate('Teste 2', ['Lazarus', 'Excelente']);
+  texto := eTranslate.Translate('Main.Btn1', ['Lazarus', 'Excelente']);
   ShowMessage(texto);
 end;
 

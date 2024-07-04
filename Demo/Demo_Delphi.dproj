@@ -194,6 +194,10 @@
             <Form>Form2</Form>
         </DCCReference>
         <DCCReference Include="..\source\eTranslate4Pascal.pas"/>
+        <DCCReference Include="..\source\eTranslate4Pascal.Classes.pas"/>
+        <DCCReference Include="..\source\eTranslate4Pascal.Interfaces.pas"/>
+        <DCCReference Include="..\source\eTranslate4Pascal.Shared.pas"/>
+        <DCCReference Include="..\source\eTranslate4Pascal.JsonObjectHelper.pas"/>
         <BuildConfiguration Include="Base">
             <Key>Base</Key>
         </BuildConfiguration>
