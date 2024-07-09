@@ -12,10 +12,13 @@ type
     Edit1: TEdit;
     Button1: TButton;
     Button2: TButton;
+    Label1: TLabel;
     procedure Button1Click(Sender: TObject);
     procedure Button2Click(Sender: TObject);
+    procedure FormCreate(Sender: TObject);
   private
     { Private declarations }
+    procedure UpdateUI;
   public
     { Public declarations }
   end;
@@ -37,6 +40,17 @@ end;
 procedure TForm2.Button2Click(Sender: TObject);
 begin
   eTranslate.SetLanguage(edit1.Text);
+end;
+
+procedure TForm2.FormCreate(Sender: TObject);
+begin
+  eTranslate.OnSetLanguage(UpdateUI);
+  UpdateUI;
+end;
+
+procedure TForm2.UpdateUI;
+begin
+  Label1.Text := eTranslate.Translate('Main.Btn1', ['Rafael', '01/01/2024']);
 end;
 
 end.

@@ -14,6 +14,7 @@ type
     Button2: TButton;
     Button3: TButton;
     Button4: TButton;
+    Label1: TLabel;
     procedure Button1Click(Sender: TObject);
     procedure Button2Click(Sender: TObject);
     procedure Button3Click(Sender: TObject);
@@ -21,6 +22,7 @@ type
     procedure Button4Click(Sender: TObject);
   private
     { Private declarations }
+    procedure UpdateUI;
   public
     { Public declarations }
   end;
@@ -36,7 +38,7 @@ uses eTranslate4Pascal, UnitSecond;
 
 procedure TForm1.Button1Click(Sender: TObject);
 begin
-  Edit1.Text := eTranslate.Translate('Main.Btn1');
+  Edit1.Text := eTranslate.GetLanguage;
 end;
 
 procedure TForm1.Button2Click(Sender: TObject);
@@ -69,6 +71,13 @@ end;
 procedure TForm1.FormCreate(Sender: TObject);
 begin
   form1.Caption := 'eTranslate version ' + eTranslate.Version;
+  UpdateUI;
+  eTranslate.OnSetLanguage(UpdateUI);
+end;
+
+procedure TForm1.UpdateUI;
+begin
+  Label1.Text := eTranslate.Translate('Main.Btn2.Text');
 end;
 
 end.

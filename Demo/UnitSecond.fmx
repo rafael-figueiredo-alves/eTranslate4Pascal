@@ -2,11 +2,12 @@ object Form2: TForm2
   Left = 0
   Top = 0
   Caption = 'Form2'
-  ClientHeight = 84
+  ClientHeight = 172
   ClientWidth = 448
   FormFactor.Width = 320
   FormFactor.Height = 480
   FormFactor.Devices = [Desktop]
+  OnCreate = FormCreate
   DesignerMasterStyle = 0
   object Edit1: TEdit
     Touch.InteractiveGestures = [LongTap, DoubleTap]
@@ -30,5 +31,14 @@ object Form2: TForm2
     TabOrder = 2
     Text = 'Set'
     OnClick = Button2Click
+  end
+  object Label1: TLabel
+    Position.X = 40.000000000000000000
+    Position.Y = 80.000000000000000000
+    Size.Width = 400.000000000000000000
+    Size.Height = 17.000000000000000000
+    Size.PlatformDefault = False
+    Text = 'Label1'
+    TabOrder = 3
   end
 end
