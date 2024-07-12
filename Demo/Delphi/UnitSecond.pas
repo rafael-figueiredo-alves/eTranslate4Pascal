@@ -30,7 +30,7 @@ implementation
 
 {$R *.fmx}
 
-Uses eTranslate4Pascal;
+uses eTranslate4Pascal;
 
 procedure TForm2.Button1Click(Sender: TObject);
 begin

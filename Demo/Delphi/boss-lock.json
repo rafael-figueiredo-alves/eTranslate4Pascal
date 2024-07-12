@@ -1,0 +1,14 @@
+{
+	"hash": "d41d8cd98f00b204e9800998ecf8427e",
+	"updated": "2024-07-11T23:01:24.256991-03:00",
+	"installedModules": {
+		"https://github.com/rafael-figueiredo-alves/etranslate4pascal": {
+			"name": "etranslate4pascal",
+			"version": "v1.0.0",
+			"hash": "c6874d95c0f042a63cfc79fefd0b0b21",
+			"artifacts": {},
+			"failed": false,
+			"changed": false
+		}
+	}
+}

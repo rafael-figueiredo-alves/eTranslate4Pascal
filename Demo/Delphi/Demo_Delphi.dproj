@@ -87,7 +87,7 @@
         <Icon_MainIcon>$(BDS)\bin\delphi_PROJECTICON.ico</Icon_MainIcon>
         <Icns_MainIcns>$(BDS)\bin\delphi_PROJECTICNS.icns</Icns_MainIcns>
         <SanitizedProjectName>Demo_Delphi</SanitizedProjectName>
-    </PropertyGroup>
+    <DCC_UnitSearchPath>..\modules\.dcp;..\modules\.dcu;$(DCC_UnitSearchPath);..\modules;..\modules\etranslate4pascal\Demo\Lazarus\backup;..\modules\etranslate4pascal\Demo\Lazarus;..\modules\etranslate4pascal\Demo;..\modules\etranslate4pascal\source\backup;..\modules\etranslate4pascal\source;modules\.dcp;modules\.dcu;modules;modules\etranslate4pascal\Demo\Lazarus\backup;modules\etranslate4pascal\Demo\Lazarus;modules\etranslate4pascal\Demo;modules\etranslate4pascal\source\backup;modules\etranslate4pascal\source</DCC_UnitSearchPath></PropertyGroup>
     <PropertyGroup Condition="'$(Base_Android)'!=''">
         <DCC_UsePackage>soapserver;IndySystem;fmx;DbxCommonDriver;bindengine;IndyIPCommon;FireDACCommonDriver;IndyProtocols;Skia.Package.RTL;IndyIPClient;dbxcds;bindcomp;FmxTeeUI;FireDACCommon;IndyCore;RESTBackendComponents;bindcompfmx;bindcompdbx;rtl;FireDACSqliteDriver;DbxClientDriver;RESTComponents;DBXSqliteDriver;IndyIPServer;fmxFireDAC;dbexpress;dsnapxml;soapmidas;inet;FireDAC;fmxase;xmlrtl;tethering;dbrtl;dsnap;Skia.Package.FMX;CloudService;CustomIPTransport;FMXTee;soaprtl;DBXInterBaseDriver;FireDACIBDriver;$(DCC_UsePackage)</DCC_UsePackage>
         <VerInfo_Keys>package=com.embarcadero.$(MSBuildProjectName);label=$(MSBuildProjectName);versionCode=1;versionName=1.0.0;persistent=False;restoreAnyVersion=False;installLocation=auto;largeHeap=False;theme=TitleBar;hardwareAccelerated=true;apiKey=</VerInfo_Keys>
@@ -193,11 +193,6 @@
         <DCCReference Include="UnitSecond.pas">
             <Form>Form2</Form>
         </DCCReference>
-        <DCCReference Include="..\source\eTranslate4Pascal.pas"/>
-        <DCCReference Include="..\source\eTranslate4Pascal.Classes.pas"/>
-        <DCCReference Include="..\source\eTranslate4Pascal.Interfaces.pas"/>
-        <DCCReference Include="..\source\eTranslate4Pascal.Shared.pas"/>
-        <DCCReference Include="..\source\eTranslate4Pascal.JsonObjectHelper.pas"/>
         <BuildConfiguration Include="Base">
             <Key>Base</Key>
         </BuildConfiguration>
