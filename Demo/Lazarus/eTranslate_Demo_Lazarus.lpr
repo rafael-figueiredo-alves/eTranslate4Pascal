@@ -10,7 +10,7 @@ uses
   athreads,
   {$ENDIF}
   Interfaces, // this includes the LCL widgetset
-  Forms, unitMain, SysUtils, eTranslate4Pascal, unit2
+  Forms, unitMain, SysUtils, unit2, eTranslate4Pascal
   { you can add units after this };
 
 {$R *.res}

@@ -4,6 +4,7 @@ uses
   System.StartUpCopy,
   FMX.Forms,
   System.SysUtils,
+  eTranslate4Pascal,
   UnitMain in 'UnitMain.pas' {Form1},
   UnitSecond in 'UnitSecond.pas' {Form2};
 

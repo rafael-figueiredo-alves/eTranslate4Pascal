@@ -9,9 +9,7 @@
         <Filename Value="eTranslate_Demo_Lazarus.lpr"/>
         <IsPartOfProject Value="True"/>
         <EditorIndex Value="-1"/>
-        <WindowIndex Value="-1"/>
-        <TopLine Value="4"/>
-        <CursorPos X="6" Y="18"/>
+        <CursorPos X="54" Y="13"/>
         <UsageCount Value="25"/>
       </Unit>
       <Unit>
@@ -27,8 +25,18 @@
         <UsageCount Value="25"/>
       </Unit>
       <Unit>
-        <Filename Value="..\..\source\eTranslate4Pascal.pas"/>
+        <Filename Value="unit2.pas"/>
         <IsPartOfProject Value="True"/>
+        <ComponentName Value="Form2"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="31"/>
+        <CursorPos X="37" Y="45"/>
+        <UsageCount Value="20"/>
+      </Unit>
+      <Unit>
+        <Filename Value="..\..\source\eTranslate4Pascal.pas"/>
         <EditorIndex Value="-1"/>
         <TopLine Value="139"/>
         <CursorPos X="13" Y="158"/>
@@ -68,17 +76,6 @@
         <EditorIndex Value="-1"/>
         <CursorPos X="38" Y="7"/>
         <UsageCount Value="11"/>
-      </Unit>
-      <Unit>
-        <Filename Value="unit2.pas"/>
-        <IsPartOfProject Value="True"/>
-        <ComponentName Value="Form2"/>
-        <HasResources Value="True"/>
-        <ResourceBaseClass Value="Form"/>
-        <EditorIndex Value="-1"/>
-        <TopLine Value="31"/>
-        <CursorPos X="37" Y="45"/>
-        <UsageCount Value="20"/>
       </Unit>
       <Unit>
         <Filename Value="C:\lazarus\lcl\include\control.inc"/>
