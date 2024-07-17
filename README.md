@@ -12,3 +12,5 @@
 
 # eTranslate4Pascal
  Biblioteca em Pascal para gerenciar multi-idiomas em uma aplicação Delphi ou Lazarus
+
+  Documentação em fase de produção... Até estar pronta, utilize o exemplo para ter uma ideia de como usar a biblioteca.
