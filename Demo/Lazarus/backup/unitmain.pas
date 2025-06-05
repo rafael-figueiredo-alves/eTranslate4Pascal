@@ -66,15 +66,15 @@ var
   texto : string;
 begin
   eTranslate.SetLanguage('pt-BR');
-  texto := eTranslate.Translate('Main.Btn2.Text');
+  texto := eTranslate.Translate('Main.Btn27877878.Text', 'Valor vazio');
   ShowMessage(texto);
-  texto := eTranslate.Translate('Main.Btn1', ['Lazarus', 'Excelente']);
+  texto := eTranslate.Translate('Main.Btn16', 'Tem valor?', ['Lazarus', 'Excelente']);
   ShowMessage(texto);
 end;
 
 procedure TForm1.Button4Click(Sender: TObject);
 begin
-  Form2 := TForm2.Create;
+  Form2 := TForm2.Create(nil);
   try
     Form2.ShowModal;
   finally

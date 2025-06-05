@@ -66,9 +66,9 @@ var
   texto : string;
 begin
   eTranslate.SetLanguage('pt-BR');
-  texto := eTranslate.Translate('Main.Btn2.Text');
+  texto := eTranslate.Translate('Main.Btn2.Text', 'Valor vazio');
   ShowMessage(texto);
-  texto := eTranslate.Translate('Main.Btn1', ['Lazarus', 'Excelente']);
+  texto := eTranslate.Translate('Main.Btn16', 'Tem valor?', ['Lazarus', 'Excelente']);
   ShowMessage(texto);
 end;
 

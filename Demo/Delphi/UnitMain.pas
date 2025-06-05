@@ -62,9 +62,9 @@ var
   texto : string;
 begin
   texto := EmptyStr;
-  texto := eTranslate.Translate('Main.Btn2.Text');
+  texto := eTranslate.Translate('Main.Btn2.Text', 'Teste em branco');
   showmessage(texto);
-  texto := eTranslate.Translate('Main.Btn1', ['Rafael', '01/01/2024']);
+  texto := eTranslate.Translate('Main.Btn16', 'Tem valor?', ['Rafael', '01/01/2024']);
   ShowMessage(texto);
 end;
 

@@ -11,8 +11,10 @@ type
    function Version: string;
    function GetLanguage: string;
    function SetLanguage(Value: string): ieTranslate;
-   function Translate(Key: string; ParamValues: array of string):string; overload;
+   function Translate(Key: string; ValuesToFillValue: array of string; DefaultValue: string = ''):string; overload;
    function Translate(Key: string):string; overload;
+   function Translate(Key: string; DefaultValue: string):string; overload;
+   function Translate(Key: string; DefaultValue: string; ValuesToFillValue: array of string):string; overload;
    function OnSetLanguage(const Event: TOnSetLanguage): ieTranslate;
 
  end;

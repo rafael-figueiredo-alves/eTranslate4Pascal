@@ -36,12 +36,14 @@ type
     function Version: string;
     function GetLanguage: string;
     function SetLanguage(Value: string): ieTranslate;
-    function Translate(Key: string; ValuesToFillValue: array of string):string; overload;
+    function Translate(Key: string; ValuesToFillValue: array of string; DefaultValue: string = ''):string; overload;
     function Translate(Key: string):string; overload;
+    function Translate(Key: string; DefaultValue: string):string; overload;
+    function Translate(Key: string; DefaultValue: string; ValuesToFillValue: array of string):string; overload;
     function OnSetLanguage(const Event: TOnSetLanguage): ieTranslate;
  end;
 
- const _version = '1.0.0';
+ const _version = '1.2.0';
 
 implementation
 
@@ -160,10 +162,10 @@ end;
 
 function TeTranslate.Translate(Key: string): string;
 begin
-  Result := self.Translate(Key, []);
+  Result := self.Translate(Key, [], EmptyStr);
 end;
 
-function TeTranslate.Translate(Key: string;ValuesToFillValue: array of string): string;
+function TeTranslate.Translate(Key: string;ValuesToFillValue: array of string; DefaultValue: string = ''): string;
 var
   ValueFromKey : string;
 begin
@@ -172,18 +174,31 @@ begin
   if(Length(ValuesToFillValue) > 0) then
    begin
      if ValueFromKey = EmptyStr then
-       raise Exception.Create('It`s not possible to fill an empty string.');
-
-     Result := FillValueWithValues(ValueFromKey, ValuesToFillValue)
+       Result := DefaultValue
+     else
+      Result := FillValueWithValues(ValueFromKey, ValuesToFillValue);
    end
   else
-   result := ValueFromKey;
+   if(ValueFromKey = EmptyStr)then
+    result := DefaultValue
+   else
+    result := ValueFromKey;
 end;
+
+function TeTranslate.Translate(Key, DefaultValue: string;ValuesToFillValue: array of string): string;
+begin
+  Result := self.Translate(Key, ValuesToFillValue, DefaultValue);
+end;
+
+function TeTranslate.Translate(Key, DefaultValue: string): string;
+begin
+  Result := self.Translate(Key, [], DefaultValue);
+end;
+
 
 function TeTranslate.Version: string;
 begin
   Result := _version;
 end;
 {$endregion}
-
 end.

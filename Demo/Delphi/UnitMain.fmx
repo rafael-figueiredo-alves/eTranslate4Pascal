@@ -23,6 +23,7 @@ object Form1: TForm1
     Position.Y = 118.000000000000000000
     TabOrder = 1
     Text = 'Get'
+    TextSettings.Trimming = None
     OnClick = Button1Click
   end
   object Button2: TButton
@@ -30,6 +31,7 @@ object Form1: TForm1
     Position.Y = 118.000000000000000000
     TabOrder = 2
     Text = 'Set'
+    TextSettings.Trimming = None
     OnClick = Button2Click
   end
   object Button3: TButton
@@ -37,6 +39,7 @@ object Form1: TForm1
     Position.Y = 168.000000000000000000
     TabOrder = 3
     Text = 'Abrir form 2'
+    TextSettings.Trimming = None
     OnClick = Button3Click
   end
   object Button4: TButton
@@ -44,6 +47,7 @@ object Form1: TForm1
     Position.Y = 168.000000000000000000
     TabOrder = 5
     Text = 'Button4'
+    TextSettings.Trimming = None
     OnClick = Button4Click
   end
   object Label1: TLabel

@@ -27,20 +27,38 @@ uses
   eTranslate4Pascal.Shared;
 
 function tJSONObjectHelper.Key(Value: string): TJSONObject;
+{$ifdef fpc}
+var
+  Elemento : TJsonData;
+{$endif}
 begin
   {$ifdef fpc}
-    Result := GetPath(Value) as TJSONObject;
+    if(Find(Value, Elemento))then
+     Result := Elemento as TJSONObject
+    else
+     Result := TJSONObject.Create;
   {$else}
     Result := GetValue(Value) as TJSONObject;
   {$endif}
 end;
 
 function tJSONObjectHelper.Value(Key: string): string;
+var
+  ValueReturned : {$ifdef fpc}TJsonData; {$else} TJsonValue; {$endif}
 begin
   {$ifdef fpc}
-    Result := RemoveQuotes(GetPath(Key).AsString);
+    if(not Find(Key, ValueReturned))then
+     Result := EmptyStr
+    else
+     Result := RemoveQuotes(ValueReturned.AsString);
   {$else}
-    Result := RemoveQuotes(GetValue(Key).ToString);
+    if(not TryGetValue(Key, ValueReturned))then
+     Result := EmptyStr
+    else
+     if(ValueReturned is TJSONString)then
+      Result := RemoveQuotes(ValueReturned.ToString)
+     else
+      Result := EmptyStr;
   {$endif}
 end;
 
