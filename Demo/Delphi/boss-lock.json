@@ -4,8 +4,8 @@
 	"installedModules": {
 		"https://github.com/rafael-figueiredo-alves/etranslate4pascal": {
 			"name": "etranslate4pascal",
-			"version": "v1.0.0",
-			"hash": "b62295213c75257ad234b24ab4055db2",
+			"version": "v1.2.0",
+			"hash": "8ec9c9f4f4bbb15984ba073a25cb2aba",
 			"artifacts": {},
 			"failed": false,
 			"changed": false

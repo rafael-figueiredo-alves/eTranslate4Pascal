@@ -59,7 +59,7 @@
     </Target>
     <SearchPaths>
       <IncludeFiles Value="$(ProjOutDir)"/>
-      <OtherUnitFiles Value="modules\.dcp;..\modules\.dcp;modules\.dcu;..\modules\.dcu;modules;..\modules;modules\etranslate4pascal\Demo\Delphi;..\modules\etranslate4pascal\Demo\Delphi;modules\etranslate4pascal\Demo\Lazarus\backup;..\modules\etranslate4pascal\Demo\Lazarus\backup;modules\etranslate4pascal\Demo\Lazarus;..\modules\etranslate4pascal\Demo\Lazarus;modules\etranslate4pascal\source;..\modules\etranslate4pascal\source"/>
+      <OtherUnitFiles Value="..\modules\.dcp;..\modules\.dcu;..\modules;..\modules\etranslate4pascal\Demo\Delphi;..\modules\etranslate4pascal\Demo\Lazarus\backup;..\modules\etranslate4pascal\Demo\Lazarus;..\modules\etranslate4pascal\source;modules\.dcp;modules\.dcu;modules;modules\etranslate4pascal\Demo\Delphi;modules\etranslate4pascal\Demo\Lazarus\backup;modules\etranslate4pascal\Demo\Lazarus;modules\etranslate4pascal\source"/>
       <UnitOutputDirectory Value="lib\$(TargetCPU)-$(TargetOS)"/>
     </SearchPaths>
     <Linking>
